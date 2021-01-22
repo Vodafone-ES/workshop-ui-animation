@@ -49,6 +49,7 @@
         to { transform: translateX(70px) }
     }
 </style>
+
 <template id="anim">
     <div class="container">
         <div class="cuad a">A</div>
@@ -77,6 +78,7 @@
             document.querySelectorAll('.b').forEach(n => n.style.animationName = 'move')
         }
     })
+    console.log('USANDO GPU: ' + gpu);
 </script>
 </body>
 </html>
