@@ -18,10 +18,10 @@
 			--animated-time: calc(var(--base-time) * var(--time-scale));
 		}
 		.animated{
+			animation: anim1 var(--animated-time) 3s linear;
+			animation-fill-mode: both;
 		}
 		.animated:hover{
-			animation: anim1 var(--animated-time) linear;
-			animation-fill-mode: forwards;
 		}
 		@keyframes anim1 {
 			0%{

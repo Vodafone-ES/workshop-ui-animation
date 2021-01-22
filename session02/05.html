@@ -14,8 +14,11 @@
 		}
 		:root {
 			--base-time: 1s;
-			--time-scale: 1;
+			--time-scale: 4;
 			--animated-time: calc(var(--base-time) * var(--time-scale));
+		}
+		.animated{
+			will-change: background-color, width, color;
 		}
 		.animated:hover{
 			animation: anim1 var(--animated-time) linear;
@@ -31,6 +34,7 @@
 			100%{
 				background-color: #900;
 				width: 300px;
+				color: white;
 			}
 		}
 	</style>

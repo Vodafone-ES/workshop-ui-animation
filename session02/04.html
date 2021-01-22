@@ -14,7 +14,7 @@
 		}
 		:root {
 			--base-time: 1s;
-			--time-scale: 1;
+			--time-scale: 0.2;
 			--transitioned-time: calc(var(--base-time) * var(--time-scale));
 		}
 		.transitioned{
@@ -25,7 +25,7 @@
 		}
 		.transitioned2{
 			transition: border-radius var(--transitioned-time) linear,
-						background-color calc(var(--transitioned-time)/3) linear;
+						background-color calc(var(--transitioned-time)/2.5) linear;
 		}
 		.transitioned2:hover{
 			border-radius: 20px;

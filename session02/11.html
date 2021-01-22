@@ -14,7 +14,7 @@
 		}
 		:root {
 			--base-time: 1s;
-			--time-scale: 1;
+			--time-scale: 0.4;
 			--animated-time: calc(var(--base-time) * var(--time-scale));
 		}
 		.card{
@@ -22,11 +22,11 @@
 			overflow: hidden;
 		}
 		.animated{
-			transition: transform var(--animated-time) linear ;
+			transition: transform var(--animated-time) ease ;
 			transform: translateX(150px);
 		}
 		.hide {
-			transform: translateX(-150px);
+			transform: translateX(600px);
 		}
 
 	</style>
